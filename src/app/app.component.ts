@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CARDS } from '../db-data';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'cardsProject';
+ 
+  card1 = CARDS[0];
+  card2 = CARDS[1];
+
 }
