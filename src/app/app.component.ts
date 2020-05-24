@@ -9,8 +9,7 @@ import { Card } from './model/card';
 })
 export class AppComponent {
  
-  card1 = CARDS[0];
-  card2 = CARDS[1];
+  cards = CARDS;
 
   onCardSelected(card:Card){
     console.log("App clicked!", card);

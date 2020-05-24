@@ -16,7 +16,8 @@
     
   <div class="cards">
 
-    <app-card (cardSelected)="onCardSelected($event)" [card]="card1" ></app-card>
-    <app-card [card]="card2" ></app-card>
+    <app-card *ngFor="let card of cards"
+          (cardSelected)="onCardSelected($event)" 
+                [card]="card"></app-card>
 
 </div>
