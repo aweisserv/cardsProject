@@ -15,9 +15,13 @@
   </div>
     
   <div class="cards">
-
+    <!--*ngFor in order to show the list of cards. cards variable is defined on app.component.ts-->
+    <!--cardIndex is an Input defined in the card.component.ts // card is defined and used inside of *ngFor (let card of cards) -->
+    <!--index is provided by the *ngFor-->
+    <!--*ngFor aux directives: index, first, last, even and odd. They can be used in order to apply class css styles, i.e.: [class.className]="first"-->
     <app-card *ngFor="let card of cards;index as i"
-          (cardSelected)="onCardSelected($event)" 
-                [card]="card" [cardIndex]= "i + 1"></app-card>
+                [cardIndex]= "i + 1"
+              (cardSelected)="onCardSelected($event)" 
+                          [card]="card"></app-card>
 
 </div>

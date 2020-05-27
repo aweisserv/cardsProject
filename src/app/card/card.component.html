@@ -1,21 +1,29 @@
 
-<div class="card-box">
+<div class="card-box" *ngIf="card">
 
     {{ cardIndex }}
 
     <div class="card-title">
         {{ card.description }} 
     </div>
-    <img width="300" alt="Angular Logo"
+    <img width="300" alt="Angular Logo" *ngIf="isImgVisible(); else noImage"
         [src]="card.iconUrl">
+
+        <ng-template #noImage>
+            <p><strong>No image available</strong></p>
+        </ng-template>
 
     <div class="card-description">
         {{ card.longDescription }}
     </div>
 
-    <div class="card-category">
-        {{ card.category }}
-    </div>
+    <div class="card-category" *ngIf="isDificulyAvailable(); else noCategory">
+        {{ card.category }} </div>
+        
+        <ng-template #noCategory>
+            <p><strong>No category available</strong></p>
+        </ng-template>
+    
 
     <button class="card-button" (click)="onCardViewed()">View details</button><br>
 

@@ -1,5 +1,6 @@
 export const CARDS: any = [
 
+    undefined, //Este elemento del arreglo ha sido agregado a propósito, con el fin de ejecutar una prueba con *ngIf
     {
         id: 1,
         description: "Angular Core Deep Card",
@@ -11,7 +12,7 @@ export const CARDS: any = [
     {
         id: 2,
         description: "RxJs In Practice Course",
-        iconUrl: 'https://s3-us-west-1.amazonaws.com/angular-university/course-images/rxjs-in-practice-course.png',
+      //iconUrl: 'https://s3-us-west-1.amazonaws.com/angular-university/course-images/rxjs-in-practice-course.png',
         longDescription: "Understand the RxJs Observable pattern, learn the RxJs Operators via practical examples",
         category: 'BEGINNER',
         lessonsCount: 10

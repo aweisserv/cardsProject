@@ -24,6 +24,13 @@ export class CardComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  isImgVisible() {
+    return this.card && this.card.iconUrl;
+  }
+  isDificulyAvailable() {
+    return this.card && this.card.category;
+  }
+
   onCardViewed() {
     console.log("Card component button clicked");
 
