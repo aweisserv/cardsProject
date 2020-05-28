@@ -37,4 +37,11 @@ export class CardComponent implements OnInit {
     this.cardSelected.emit(this.card);
   }
 
+  cardClasses() {
+    return {
+    'advanced':this.card.category == 'ADVANCED', 
+    'intermediate':this.card.category == 'INTERMEDIATE',
+    'beginner':this.card.category == 'BEGINNER',
+    'card-box':true}
+  };
 }

@@ -1,67 +1,20 @@
-.card-box {
-    margin-bottom: 40px;
-    text-align: center;
-    border-radius: 4px;
-    padding: 20px 0;
-    box-shadow: 0 1px 16px 0 rgba(0, 0, 0, .2), 0 2px 8px 0 rgba(0, 0, 0, .14), 0 4px 8px -1px rgba(0, 0, 0, .12);
-    max-width: 400px;
-    margin: 50px auto;
-    font-family: "Candara", sans-serif;
-  }
+.card-box.beginner {
+  transition-duration: 1s;
+}
+.card-box.beginner:hover {
+  box-shadow: 0 1px 5px 0 rgba(34, 167, 240, 1), 0 2px 5px 0 rgba(34, 167, 240, 1), 0 4px 8px -1px rgba(34, 167, 240, 1);
+}
 
-  .card-box img {
-    border-radius: 4px;
-    margin-top: 10px;
-    box-shadow: 0 1px 16px 0 rgba(0, 0, 0, .2), 0 2px 8px 0 rgba(0, 0, 0, .14), 0 4px 8px -1px rgba(0, 0, 0, .12);
-  }
+.card-box.intermediate {
+  transition-duration: 1s;
+}
+.card-box.intermediate:hover {
+  box-shadow: 0 1px 10px 0 rgba(140, 20, 252, 1), 0 2px 10px 0 rgba(140, 20, 252, 1), 0 4px 8px -1px rgba(140, 20, 252, 1);
+}
 
-  .card-box .card-title {
-    font-size: 27px;
-    font-weight: bold;
-  }
-
-  .card-box .card-description {
-    max-width: 360px;
-    margin: 0 auto;
-    margin-top: 15px;
-    margin-left: 40px;
-    margin-right: 40px;
-  }
-  
-  .card-box .card-button {
-    background-color: grey;
-    border: none;
-    border-radius: 4px;
-    font-family: "Candara", Garamond, "Big Caslon", "Times New Roman", sans-serif;
-    color: white;
-    padding: 8px 15px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    margin-top: 15px;
-    transition-duration: 0.2s;
-  }
-  .card-box .card-button:hover {
-    background-color: whitesmoke;
-    color: black;
-  }
-
-  .card-box .card-category {
-    font-size: 20px;
-    font-weight: 500;
-    margin-top: 10px;
-  }
-  
-  .card-card.beginner {
-    background: lightsalmon;
-  }
-  */
-
-  .cards {
-    max-width: 400px;
-    margin: 50px auto;
-    font-family: sans-serif;
+.card-box.advanced {
+  transition-duration: 1s;
+}
+.card-box.advanced:hover {
+  box-shadow: 0 3px 20px 0 rgba(255, 206, 0, 1.0), 0 3px 20px 0 rgba(255, 206, 0, 1.0), 0 4px 8px -1px rgba(255, 206, 0, 1.0);
 }

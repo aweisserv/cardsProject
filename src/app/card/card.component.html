@@ -1,6 +1,6 @@
 
-<div class="card-box" *ngIf="card">
-
+<div class="card-box" *ngIf="card"
+    [ngClass]="cardClasses()">
     {{ cardIndex }}
 
     <div class="card-title">
