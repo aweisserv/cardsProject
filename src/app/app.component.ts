@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { CARDS } from '../db-data';
 import { Card } from './model/card';
+
 import { formatDate } from '@angular/common';
 
 @Component({
@@ -18,6 +19,4 @@ export class AppComponent {
     console.log("App clicked!", card);
 
   }
-//------Test fetch Marvel API------//
-
 }
