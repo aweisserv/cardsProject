@@ -41,7 +41,12 @@ export class CardComponent implements OnInit {
     return {
     'advanced':this.card.category == 'ADVANCED', 
     'intermediate':this.card.category == 'INTERMEDIATE',
-    'beginner':this.card.category == 'BEGINNER',
-    'card-box':true}
+    'beginner':this.card.category == 'BEGINNER'}
   };
+
+
+  cardStyles() {
+    return {'text-decoration': 'underline'};
+  } 
+
 }

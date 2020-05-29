@@ -17,7 +17,7 @@
         {{ card.longDescription }}
     </div>
 
-    <div class="card-category" *ngIf="isDificulyAvailable(); else noCategory">
+    <div class="card-category" [ngStyle]="cardStyles()" *ngIf="isDificulyAvailable(); else noCategory">
         {{ card.category }} </div>
         
         <ng-template #noCategory>
